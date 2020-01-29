@@ -7,13 +7,13 @@ const getTimeString = () => {
 };
 
 const getTime = (request, response) => {
-  response.writeHead(200, { 'Content-Type': 'text/html' });
+  response.writeHead(200, { 'Content-Type': 'applicaition/json' });
   response.write(getTimeString());
   response.end();
 };
 
 const getHello = (request, response) => {
-  response.writeHead(200, { 'Content-Type': 'text/html' });
+  response.writeHead(200, { 'Content-Type': 'application/json' });
   response.write(hello);
   response.end();
 };
